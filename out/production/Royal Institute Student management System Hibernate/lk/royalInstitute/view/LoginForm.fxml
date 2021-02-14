@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.royalInstitute.controller.LoginFormController">
+   <children>
+      <Label layoutX="233.0" layoutY="14.0" text="Login Form">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtUserName" labelFloat="true" layoutX="185.0" layoutY="149.0" prefWidth="230.0" promptText="username" />
+      <JFXPasswordField fx:id="pwdPassword" labelFloat="true" layoutX="185.0" layoutY="211.0" prefWidth="230.0" promptText="Password" />
+      <JFXTextField fx:id="txtPassword" labelFloat="true" layoutX="185.0" layoutY="211.0" prefHeight="25.0" prefWidth="230.0" promptText="Password" visible="false" />
+      <JFXButton layoutX="377.0" layoutY="292.0" onAction="#btnLoginOnAction" text="Login" />
+      <JFXRadioButton fx:id="rdoShow" layoutX="254.0" layoutY="255.0" onAction="#rdoShowButtonOnAction" text="Show Password" />
+      <JFXButton layoutX="457.0" layoutY="292.0" onAction="#btnCancelOnAction" text="cancel" />
+   </children>
+</AnchorPane>

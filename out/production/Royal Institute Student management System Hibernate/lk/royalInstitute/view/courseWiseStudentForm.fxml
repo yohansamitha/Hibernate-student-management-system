@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.royalInstitute.controller.CourseWiseStudentFormController">
+   <children>
+      <TableView fx:id="tblCourseWisesStudent" layoutX="21.0" layoutY="86.0" prefHeight="428.0" prefWidth="849.0">
+        <columns>
+          <TableColumn fx:id="colRegNo" prefWidth="60.0" text="regNo" />
+          <TableColumn fx:id="colRegDate" prefWidth="75.0" text="regDate" />
+          <TableColumn fx:id="colRegFee" prefWidth="75.0" text="regFee" />
+          <TableColumn fx:id="colStudent_ID" prefWidth="65.0" text="student_ID" />
+          <TableColumn fx:id="colStudentName" prefWidth="100.0" text="studentName" />
+          <TableColumn fx:id="colContact" prefWidth="75.0" text="contact" />
+          <TableColumn fx:id="colDob" prefWidth="75.0" text="dob" />
+          <TableColumn fx:id="colCourse_code" prefWidth="75.0" text="course_code" />
+          <TableColumn fx:id="colCourseName" prefWidth="100.0" text="courseName" />
+          <TableColumn fx:id="colCourseFee" prefWidth="75.0" text="courseFee" />
+            <TableColumn fx:id="colCourseDuration" prefWidth="67.0" text="Duration" />
+        </columns>
+      </TableView>
+      <Label layoutX="333.0" layoutY="14.0" text="Course Wise Student Form">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

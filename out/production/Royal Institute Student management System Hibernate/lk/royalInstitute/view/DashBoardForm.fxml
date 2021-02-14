@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="642.0" prefWidth="1085.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.royalInstitute.controller.DashBoardFormController">
+    <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1085.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+        <children>
+            <Pane layoutY="40.0" prefHeight="600.0" prefWidth="195.0" style="-fx-background-color: #f5f6fa;">
+            <children>
+               <VBox prefHeight="600.0" prefWidth="195.0" spacing="67.0">
+                  <children>
+                     <JFXButton onAction="#btnAddStudentOnAction" prefWidth="190.0" text="Add Student">
+                        <graphic>
+                           <ImageView fitHeight="55.0" fitWidth="55.0">
+                              <image>
+                                 <Image url="@../assets/icons8-add-user-male-48.png" />
+                              </image>
+                           </ImageView>
+                        </graphic>
+                        <VBox.margin>
+                           <Insets />
+                        </VBox.margin>
+                     </JFXButton>
+                     <JFXButton onAction="#btnAddRegistrationOnAction" prefWidth="190.0" text="Registration">
+                        <graphic>
+                           <ImageView fitHeight="55.0" fitWidth="55.0">
+                              <image>
+                                 <Image url="@../assets/icons8-create-64.png" />
+                              </image>
+                           </ImageView>
+                        </graphic>
+                        <VBox.margin>
+                           <Insets />
+                        </VBox.margin></JFXButton>
+                     <JFXButton onAction="#btnAddCourseOnAction" prefWidth="190.0" text="Add Course">
+                        <graphic>
+                           <ImageView fitHeight="55.0" fitWidth="55.0">
+                              <image>
+                                 <Image url="@../assets/icons8-create-order-64.png" />
+                              </image>
+                           </ImageView>
+                        </graphic>
+                        <VBox.margin>
+                           <Insets />
+                        </VBox.margin></JFXButton>
+                     <JFXButton onAction="#btnCourseWiseStudentOnAction" prefWidth="190.0" text="Course wise Student">
+                        <graphic>
+                           <ImageView fitHeight="55.0" fitWidth="55.0">
+                              <image>
+                                 <Image url="@../assets/icons8-list-64.png" />
+                              </image>
+                           </ImageView>
+                        </graphic>
+                        <VBox.margin>
+                           <Insets />
+                        </VBox.margin></JFXButton>
+                     <JFXButton layoutX="10.0" layoutY="400.0" onAction="#btnUserAccountOnAction" prefWidth="190.0" text="UserAccount Manage">
+                        <graphic>
+                           <ImageView fitHeight="55.0" fitWidth="55.0">
+                              <image>
+                                 <Image url="@../assets/icons8-accountant-48.png" />
+                              </image>
+                           </ImageView>
+                        </graphic>
+                     </JFXButton>
+                  </children>
+               </VBox>
+            </children>
+            </Pane>
+            <Pane prefHeight="40.0" prefWidth="1085.0" style="-fx-background-color: #dcdde1;">
+                <children>
+                    <Label layoutX="838.0" layoutY="12.0" text="Date &amp; time" />
+                    <Label fx:id="dateTime" layoutX="920.0" layoutY="12.0" prefHeight="17.0" prefWidth="122.0" />
+                    <Label layoutX="488.0" layoutY="8.0" text="Royal institute">
+                        <font>
+                            <Font name="System Bold" size="16.0" />
+                        </font>
+                    </Label>
+                </children>
+            </Pane>
+         <AnchorPane fx:id="context" layoutX="195.0" layoutY="40.0" prefHeight="600.0" prefWidth="890.0" style="-fx-background-color: white;" />
+        </children>
+    </Pane>
+</AnchorPane>
