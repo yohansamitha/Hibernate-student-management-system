@@ -6,8 +6,10 @@ import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 import javafx.util.Duration;
 
 import java.io.IOException;
@@ -20,6 +22,7 @@ public class DashBoardFormController implements Initializable {
 
     public Label dateTime;
     public AnchorPane context;
+    public AnchorPane root;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -62,5 +65,12 @@ public class DashBoardFormController implements Initializable {
 
     public void btnUserAccountOnAction(ActionEvent actionEvent) {
         setUI("UserAccountForm");
+    }
+
+    public void btnLogoutOnAction(ActionEvent actionEvent) throws IOException {
+        Stage stage = (Stage) root.getScene().getWindow();
+        stage.setScene(new Scene(FXMLLoader.load(this.getClass().getResource("../view/LoginForm.fxml"))));
+        stage.centerOnScreen();
+        stage.show();
     }
 }

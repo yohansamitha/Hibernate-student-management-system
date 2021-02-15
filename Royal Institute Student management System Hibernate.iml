@@ -5,7 +5,7 @@
       <configuration>
         <setting name="validation-enabled" value="true" />
         <datasource-mapping>
-          <factory-entry name="Royal Institute Student management System Hibernate" />
+          <factory-entry name="Royal Institute Student management System Hibernate" value="f73f62f7-0146-4880-93ae-20004b6a4f42" />
         </datasource-mapping>
         <naming-strategy-map />
       </configuration>

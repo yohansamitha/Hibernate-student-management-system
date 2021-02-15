@@ -7,5 +7,13 @@
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/royal_institute_management_system</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="Royal Institute Student management System Hibernate/Hibernate" uuid="f73f62f7-0146-4880-93ae-20004b6a4f42">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate</remarks>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/Royal_Institute_Management_System?createDatabaseIfNotExist=true</jdbc-url>
+    </data-source>
   </component>
 </project>

@@ -18,6 +18,7 @@ import lk.royalInstitute.dto.UserDTO;
 
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.ResourceBundle;
 
 public class UserAccountFormController implements Initializable {
@@ -62,9 +63,11 @@ public class UserAccountFormController implements Initializable {
 
     public void btnRegisterOnAction(ActionEvent actionEvent) {
         try {
-            String password = null;
             if (pwdNewPassword.getText().equals(pwdReEnterPassword.getText())) {
-                password = pwdNewPassword.getText();
+                String reversed = new StringBuilder(pwdNewPassword.getText()).reverse().toString();
+                byte[] bytes = reversed.getBytes();
+                String password = Base64.getEncoder().encodeToString(bytes);
+//                String password = pwdNewPassword.getText();
                 UserDTO userDTO = new UserDTO(lblUserID.getText(), txtUserName.getText(), password);
                 boolean b = userBO.addUser(userDTO);
                 System.out.println(b);
@@ -125,7 +128,10 @@ public class UserAccountFormController implements Initializable {
     public void btnUpdateOnAction(ActionEvent actionEvent) {
         try {
             if (pwdNewPassword.getText().equals(pwdReEnterPassword.getText())) {
-                String password = pwdNewPassword.getText();
+                String reversed = new StringBuilder(pwdNewPassword.getText()).reverse().toString();
+                byte[] bytes = reversed.getBytes();
+                String password = Base64.getEncoder().encodeToString(bytes);
+//                String password = pwdNewPassword.getText();
                 UserDTO userDTO = new UserDTO(lblUserID.getText(), txtUserName.getText(), password);
                 boolean b = userBO.UpdateUser(userDTO);
                 System.out.println(b);

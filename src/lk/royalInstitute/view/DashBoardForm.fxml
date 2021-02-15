@@ -6,7 +6,7 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.Font?>
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="642.0" prefWidth="1085.0"
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="root" prefHeight="642.0" prefWidth="1085.0"
             xmlns="http://javafx.com/javafx/8.0.171"
             fx:controller="lk.royalInstitute.controller.DashBoardFormController">
     <Pane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
@@ -89,6 +89,7 @@
                             <Font name="System Bold" size="16.0"/>
                         </font>
                     </Label>
+                    <JFXButton layoutX="21.0" layoutY="8.0" onAction="#btnLogoutOnAction" text="Logout"/>
                 </children>
             </Pane>
             <AnchorPane fx:id="context" layoutX="195.0" layoutY="40.0" prefHeight="600.0" prefWidth="890.0"
